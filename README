@@ -1,14 +1,14 @@
-# Auxilium: a custom vcpkg registry
+Triplets: a custom vcpkg registry
 
-## Add the registry
+Add the registry
 
-### Example: Install overlay packages
+Example: Install overlay packages
 
-Suppose the path to the registry is: `D:/auxilium`:
+Suppose the path to the registry is: `D:/triplets`:
 ```powershell
 $env:VCPKG_DEFAULT_TRIPLET="x64-windows"
-$env:VCPKG_OVERLAY_PORTS="D:/auxilium/ports"
-$env:VCPKG_OVERLAY_TRIPLETS="D:/auxilium/triplets"
+$env:VCPKG_OVERLAY_PORTS="D:/triplets/ports"
+$env:VCPKG_OVERLAY_TRIPLETS="D:/triplets/triplets"
 
 vcpkg install `
         abseil `
